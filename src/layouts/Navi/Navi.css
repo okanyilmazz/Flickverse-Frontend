@@ -1,0 +1,83 @@
+.navi {
+    padding-top: 10px;
+}
+
+.navi .navbar {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navi .navbar .navbar-collapse .navbar-nav {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    gap: 1.438rem;
+
+}
+
+
+.navi .navbar .navbar-collapse .navbar-nav .nav-item {
+    color: #fff;
+    font-family: 'ProximaNovaBold';
+    font-size: 18px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.navi .navbar .navbar-collapse .navbar-nav #basic-nav-dropdown {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navi .navbar .navbar-collapse .navbar-nav .movie {
+    margin-left: 40px;
+}
+
+.navi .navbar .navi-search Button {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    align-items: center;
+    text-align: start;
+    width: 180px;
+    height: 50px;
+    padding-left: 28px;
+    padding-right: 9px;
+    gap: 17px;
+    width: max-content;
+}
+
+.navi .navbar .navi-search Button div {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+}
+
+.navi .navbar .navi-search Button img {
+    height: 28px;
+}
+
+
+.navi .navbar .navi-search .login-btn,
+.navi .navbar .navi-search .register-btn {
+    font-size: 14px;
+}
+
+.navi .navbar .navi-search .search-text {
+    color: #fff;
+}
+
+.navi .navbar form {
+    align-items: center;
+    gap: 2rem;
+}
+
+.navi .navbar form .search-left {
+    display: flex;
+    gap: 1rem;
+}
