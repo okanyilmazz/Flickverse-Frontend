@@ -44,10 +44,15 @@ export default function MovieCard() {
                             <Button className='get-ticket'>Hemen Bilet Al</Button>
                             <Button className='check-movie'>İncele</Button>
                         </div>
-
                     </div>
                 </Card.Body>
+
             </Card>
+            <div className='movie-detail'>
+                <span id='movie-name'>Lohusa</span>
+                <span id='movie-time' >1 sa 58 dk</span>
+                <span id='movie-category'>Komedi</span>
+            </div>
         </div>
     )
 }
