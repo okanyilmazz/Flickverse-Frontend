@@ -11,7 +11,8 @@
 }
 
 .home-page .home-page-content .movies-in-vision-area-header,
-.home-page .home-page-content .upcoming-movies-area-header {
+.home-page .home-page-content .upcoming-movies-area-header,
+.home-page .home-page-content .campaign-area-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,13 +25,87 @@
 }
 
 .home-page .home-page-content #header-see-more {
-
     color: #fff;
     font-family: 'ProximaNovaBold';
     font-size: 24px;
     text-decoration: underline;
 }
 
-.home-page .home-page-content .upcoming-movies-area {
+.home-page .home-page-content .upcoming-movies-area,
+.home-page .home-page-content .campaign-area {
+    margin-top: 6rem;
+}
+
+.home-page .home-page-content .campaign-slider {
+    margin-top: 2rem;
+}
+
+.campaign-slider .slick-dots {
+    bottom: -40px;
+}
+
+.slick-dots li button::before {
+    color: #fff !important;
+    font-size: 15px !important;
+}
+
+.slick-dots li {
+
+    margin: 0px 10px !important;
+}
+
+.slick-dots .slick-active {
+    margin-right: 60px !important;
+}
+
+
+
+.slick-active button::before {
+    font-size: 15px;
+    border-radius: 7.5px;
+    background-color: white;
+    opacity: 1 !important;
+    width: 60px !important;
+    height: 15px !important;
+}
+
+
+.cgv-movie-pass-area {
+    display: flex;
     margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.cgv-movie-pass-area .cgv-movie-pass-text {
+    color: #fff;
+    text-align: center;
+    display: grid;
+    row-gap: 20px;
+}
+
+.cgv-movie-pass-area .cgv-movie-pass-text h1 {
+    font-family: 'ProximaNovaBold';
+    font-size: 45px;
+}
+
+.cgv-movie-pass-area .cgv-movie-pass-text span {
+    color: #ffffff9f;
+    font-family: 'ProximaNovaRegular';
+    font-size: 20px;
+}
+
+.cgv-movie-pass-area .cgv-movie-pass-text .text-link {
+    text-decoration: underline;
+}
+
+.cgv-movie-pass-area .cgv-movie-pass-text .campaign-area {
+    height: 1000px;
+}
+
+.cgv-movie-pass-area .cgv-movie-pass-logo {
+    text-align: center;
+}
+
+.cgv-movie-pass-area .cgv-movie-pass-logo img {
+    width: 40%;
 }

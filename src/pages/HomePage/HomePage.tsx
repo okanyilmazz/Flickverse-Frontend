@@ -6,6 +6,8 @@ import movieService from '../../services/movieService';
 import { Paginate } from '../../models/paginate';
 
 import Slider from "react-slick";
+import CampaignCard from '../../components/CampaignCard/CampaignCard';
+import { Image } from 'react-bootstrap';
 export default function HomePage() {
 
     const [moviesInTheVision, setMoviesInTheVisions] = useState<Paginate<GetListMovieResponse>>();
@@ -24,10 +26,18 @@ export default function HomePage() {
     }, [])
 
     const settings = {
-        dots: true,
         infinite: false,
         speed: 500,
         slidesToShow: 5,
+        slidesToScroll: 1,
+        lazyLoad: true
+    };
+
+    const settingsCampaign = {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 1,
         slidesToScroll: 1,
         lazyLoad: true
 
@@ -73,6 +83,39 @@ export default function HomePage() {
                             }
                         </Slider>
                     </div>
+                </div>
+
+                <div className='campaign-area container-fluid'>
+                    <div className='campaign-area-header'>
+                        <h2 id='header-title'>Kampanyalar</h2>
+                        <span id='header-see-more'>Tümü</span>
+                    </div>
+                    <div className='campaigns'>
+                        <Slider className='campaign-slider' {...settingsCampaign}>
+                            {
+                                moviesInTheVision?.items.map((movie) => (
+                                    <CampaignCard />
+                                ))
+
+                            }
+                        </Slider>
+
+                    </div>
+
+
+                </div>
+
+
+                <div className='cgv-movie-pass-area'>
+                    <div className='cgv-movie-pass-logo col-md-2'>
+                        <Image src='assets/images/logos/cgv_movie_pass_1x.svg'></Image>
+                    </div>
+                    <div className='cgv-movie-pass-text col-md-5 offset-2'>
+                        <h1>CGV MoviePass</h1>
+                        <span>Sinemada film izlemenin daha hesaplı, daha kolay, çook sürprizli yolu CGV MoviePass’te! Haydi hiç vakit kaybetmeden, paketini seç sinemaya gel! CGV Para’larınla hem mısır hem de sürpriz hediyeler senin olsun.</span>
+                        <span className='text-link'>Detaylı Bilgi İçin Tıkla</span>
+                    </div>
+
                 </div>
             </div>
         </div>

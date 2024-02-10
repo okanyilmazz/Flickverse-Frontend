@@ -1,0 +1,14 @@
+.campaign-card {
+    height: 470px;
+}
+
+.campaign-card .card {
+    border-radius: 20px !important;
+    border: 0;
+    height: 100%;
+}
+
+.campaign-card .card .card-img {
+    border-radius: 15px !important;
+    height: 100%;
+}
