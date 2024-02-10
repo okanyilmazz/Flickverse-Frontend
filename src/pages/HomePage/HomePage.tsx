@@ -184,6 +184,34 @@ export default function HomePage() {
                     </div>
                 </div>
 
+
+                <div className="mobile-app-area container-fluid">
+                    <div className="mobile-app-area-content">
+
+                        <div className="mobile-app-area-left-content">
+                            <div className='mobile-app-area-slogan'>
+                                <span>Mobil Uygulamamızı Keşfedin!</span>
+                            </div>
+                            <div className='mobile-left-button-area'>
+                                <Button><Image src='assets/images/logos/store/google_play_3x.png'></Image></Button>
+                                <Button><Image src='assets/images/logos/store/app_store_3x.png'></Image></Button>
+                            </div>
+                        </div>
+                        <div className="mobile-app-area-right-content">
+                            <div className="col-auto">
+                                <div>
+                                    <Image src='assets/images/logos/store/phone_3x.png' />
+                                </div>
+                            </div>
+                            <div className="col-auto">
+                                <div>
+                                    <Image src='assets/images/logos/store/phone_avatar_4x.png' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     )

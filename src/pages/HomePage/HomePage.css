@@ -237,3 +237,64 @@
 .exclusive-lounge:hover.exclusive-lounge img:last-child {
     display: block;
 }
+
+
+
+/*MOBILE APP AREA*/
+
+.mobile-app-area {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+}
+
+.mobile-app-area .mobile-app-area-content {
+    display: flex;
+    background-color: #2e2e2e;
+    border-radius: 16px;
+    width: 100%;
+    padding-top: 99px;
+    padding-left: 80px;
+    position: sticky;
+    height: 276px;
+
+}
+
+.mobile-app-area .mobile-app-area-left-content,
+.mobile-app-area .mobile-app-area-right-content {
+    display: flex;
+}
+
+.mobile-app-area .mobile-app-area-right-content {
+    position: absolute;
+    right: 70px;
+    top: -23px;
+
+    display: flex;
+    gap: 8rem;
+}
+
+.mobile-app-area .mobile-app-area-left-content .mobile-app-area-slogan {
+    color: #fff;
+    font-size: 36px;
+    max-width: 380px;
+    line-height: 44px;
+    margin-bottom: 0;
+
+}
+
+.mobile-app-area .mobile-app-area-left-content .mobile-app-area-slogan span {
+    font-family: "ProximaNovaBold";
+}
+
+.mobile-app-area .mobile-app-area-left-content .mobile-left-button-area {
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+    align-self: start;
+}
+
+.mobile-app-area .mobile-app-area-left-content .mobile-left-button-area button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
