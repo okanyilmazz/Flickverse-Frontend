@@ -7,7 +7,7 @@ import { Paginate } from '../../models/paginate';
 
 import Slider from "react-slick";
 import CampaignCard from '../../components/CampaignCard/CampaignCard';
-import { Image } from 'react-bootstrap';
+import { Button, Col, Image, Row } from 'react-bootstrap';
 import MoviePassCard from '../../components/MoviePassCard/MoviePassCard';
 export default function HomePage() {
 
@@ -54,7 +54,7 @@ export default function HomePage() {
         <div className='home-page'>
             <div className='home-page-content'>
                 <div className='movies-in-vision-area container-fluid'>
-                    <div className='movies-in-vision-area-header'>
+                    <div className='area-header'>
                         <h2 id='header-title'>Vizyondakiler</h2>
                         <span id='header-see-more'>Tümü</span>
                     </div>
@@ -74,7 +74,7 @@ export default function HomePage() {
                 </div>
 
                 <div className='upcoming-movies-area container-fluid'>
-                    <div className='upcoming-movies-area-header'>
+                    <div className='area-header'>
                         <h2 id='header-title'>Yakında Vizyona Girecekler</h2>
                         <span id='header-see-more'>Tümü</span>
                     </div>
@@ -94,7 +94,7 @@ export default function HomePage() {
                 </div>
 
                 <div className='campaign-area container-fluid'>
-                    <div className='campaign-area-header'>
+                    <div className='area-header'>
                         <h2 id='header-title'>Kampanyalar</h2>
                         <span id='header-see-more'>Tümü</span>
                     </div>
@@ -136,6 +136,37 @@ export default function HomePage() {
                         }
                     </Slider>
                 </div>
+
+                <div className='cgv-cinema-club-area container-fluid'>
+                    <div className="cgv-cinema-club-area-content">
+                        <div className='cinema-club-logo'>
+                            <Image src='assets/images/logos/cgv_logo_3x.png' />
+                        </div>
+                        <div className='cinema-club-content'>
+                            <div className='top-description'>
+                                <p>Bitmeyen fayda yapmışlar!</p>
+                            </div>
+                            <div className='sub-description'>
+                                <p>%3 CGV Para ve hizmet bedeli yok. İndirimli 3D gözlüklerin yanında, doğum günü sürprizleri. Herkesten önce filmlerin ön gösterimlerinden sen haberdar ol!</p>
+                            </div>
+                            <div className='cinema-club-button-area'>
+                                <Button className='discovery-button'>Keşfet</Button>
+                                <Button className='sign-up-button'>Üye Ol</Button>
+                            </div>
+                        </div>
+                        <div className='cinema-club-icon'>
+                            <Image className='cinema-club-icon-img' src="assets/images/logos/avatar_coin_2x.png" />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="exclusive-lounge-area container-fluid">
+                    <div className='area-header'>
+                        <h2 id='header-title'>Ayrıcalıklı Salonlar</h2>
+                        <span id='header-see-more'>Tümü</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     )

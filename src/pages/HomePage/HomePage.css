@@ -10,9 +10,9 @@
     justify-content: center;
 }
 
-.home-page .home-page-content .movies-in-vision-area-header,
-.home-page .home-page-content .upcoming-movies-area-header,
-.home-page .home-page-content .campaign-area-header {
+.home-page .home-page-content .area-header,
+.home-page .home-page-content .area-header,
+.home-page .home-page-content .area-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -116,6 +116,77 @@
 
 
 /*CGV-MOVIE-PASS-CARD-AREA*/
+
 .cgv-movie-pass-card-area .slick-list {
     padding-top: 2rem;
+}
+
+
+/*CGV-CINEMA-CLUB-AREA*/
+
+.cgv-cinema-club-area-content {
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 20px;
+    height: 335px;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem;
+}
+
+.cgv-cinema-club-area .cinema-club-content {
+    display: grid;
+    row-gap: 2rem;
+    width: 50%;
+    padding: 4rem 0;
+}
+
+.cgv-cinema-club-area .cinema-club-content .top-description p {
+    font-size: 18px;
+    font-family: 'ProximaNovaRegular';
+}
+
+.cgv-cinema-club-area .cinema-club-content .sub-description p {
+    font-size: 24px;
+    font-family: 'ProximaNovaBold';
+}
+
+.cgv-cinema-club-area .cgv-cinema-club-area-content .cinema-club-icon {
+    width: 27%;
+    position: sticky;
+}
+
+.cgv-cinema-club-area .cgv-cinema-club-area-content .cinema-club-icon .cinema-club-icon-img {
+    height: 416px;
+    margin-bottom: 5.4rem;
+    margin-left: 2.5rem;
+
+}
+
+.cgv-cinema-club-area .cgv-cinema-club-area-content .cinema-club-button-area {
+    display: flex;
+    gap: 10px;
+
+}
+
+.cgv-cinema-club-area .cgv-cinema-club-area-content .cinema-club-button-area button {
+    border-radius: 50px;
+    font-family: 'ProximaNovaBold';
+    width: 165px;
+    height: 40px;
+    font-size: 16px;
+}
+
+
+.cgv-cinema-club-area .cgv-cinema-club-area-content .cinema-club-button-area button:first-child {
+    border: 2px solid #abb5c4;
+    background-color: transparent;
+    color: #3f444c;
+}
+
+.cgv-cinema-club-area .cgv-cinema-club-area-content .cinema-club-button-area button:last-child {
+    border: 1px solid #96a825;
+    background-color: #96a825;
 }
