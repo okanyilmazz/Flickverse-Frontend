@@ -190,3 +190,50 @@
     border: 1px solid #96a825;
     background-color: #96a825;
 }
+
+/*EXCLUSIVE LOUNGE AREA*/
+
+.exclusive-lounge-area {
+    margin-top: 12rem;
+}
+
+.exclusive-lounge-area .exclusive-lounges-content {
+    display: grid;
+    grid-template-columns: repeat(6, 250px);
+    gap: 1.5rem;
+}
+
+.exclusive-lounge {
+    display: flex;
+    align-items: center;
+    flex-basis: 15%;
+    box-sizing: border-box;
+    padding: 0px 18px;
+    gap: 10px;
+    height: 76px;
+    background: #383838;
+    border-radius: 999px;
+    justify-content: center;
+    cursor: pointer;
+    width: 262px;
+}
+
+.exclusive-lounges-content img:last-child {
+    display: none;
+}
+
+.exclusive-lounges-content img:hover:last-child {
+    display: block;
+}
+
+.exclusive-lounge:hover.exclusive-lounge {
+    background-color: #fff;
+}
+
+.exclusive-lounge:hover.exclusive-lounge img:first-child {
+    display: none;
+}
+
+.exclusive-lounge:hover.exclusive-lounge img:last-child {
+    display: block;
+}

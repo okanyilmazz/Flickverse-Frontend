@@ -165,6 +165,23 @@ export default function HomePage() {
                         <h2 id='header-title'>Ayrıcalıklı Salonlar</h2>
                         <span id='header-see-more'>Tümü</span>
                     </div>
+
+                    <div className='exclusive-lounges-content'>
+                        <div className='exclusive-lounge'>
+                            <Image src='assets/images/logos/cinema_types/imax-w.svg' />
+                            <Image src='assets/images/logos/cinema_types/imax.svg' />
+                        </div>
+                        <div className='exclusive-lounge'>
+                            <Image src='assets/images/logos/cinema_types/4dx-w.svg' />
+                            <Image src='assets/images/logos/cinema_types/4dx.svg' />
+                        </div>
+                        <div className='exclusive-lounge'>
+                            <Image src='assets/images/logos/cinema_types/gold-class-w.svg' />
+                            <Image src='assets/images/logos/cinema_types/gold-class.svg' />
+                        </div>
+
+
+                    </div>
                 </div>
 
             </div>
