@@ -70,6 +70,9 @@
 }
 
 
+
+/*CGV-MOVIE-PASS-AREA*/
+
 .cgv-movie-pass-area {
     display: flex;
     margin-top: 10rem;
@@ -92,6 +95,7 @@
     color: #ffffff9f;
     font-family: 'ProximaNovaRegular';
     font-size: 20px;
+    line-height: 1.5;
 }
 
 .cgv-movie-pass-area .cgv-movie-pass-text .text-link {
@@ -107,5 +111,11 @@
 }
 
 .cgv-movie-pass-area .cgv-movie-pass-logo img {
-    width: 40%;
+    width: 10rem;
+}
+
+
+/*CGV-MOVIE-PASS-CARD-AREA*/
+.cgv-movie-pass-card-area .slick-list {
+    padding-top: 2rem;
 }

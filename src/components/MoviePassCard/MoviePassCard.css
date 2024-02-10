@@ -1,0 +1,70 @@
+.movie-pass-card {
+    margin-right: 2rem;
+}
+
+.movie-pass-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.movie-pass-card .card {
+    width: 100%;
+    padding: 32px;
+    border-radius: 32px;
+    border: 2px solid #A4B446;
+    background: rgba(255, 255, 255, 0.10);
+    height: auto;
+    margin-bottom: 32px;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.movie-pass-card .card:hover {
+    background: #212121;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transform: translateY(-25px);
+    z-index: 9999;
+}
+
+.movie-pass-card-top .movie-pass-price {
+    font-size: 48px;
+    font-family: "ProximaNovaBold";
+}
+
+.movie-pass-card-top .movie-pass-items span {
+    font-family: "ProximaNovaBold";
+}
+
+.movie-pass-card-top .movie-pass-items svg {
+    font-weight: 900;
+    fill: #fff;
+}
+
+.movie-pass-card-top .movie-pass-items .movie-pass-item {
+    display: flex;
+    gap: 5px;
+}
+
+.movie-pass-card .card .card-img-top {
+    border-radius: 20px;
+    height: 580px;
+}
+
+.movie-pass-card .card .movie-card-footer {
+    width: max-content;
+    left: 11rem;
+    bottom: 4rem;
+}
+
+.movie-pass-card .card .movie-card-footer button {
+    font-size: 18px;
+    width: 220px;
+    padding: 10px 20px;
+    font-family: 'ProximaNovaBold';
+}
+
+.movie-pass-card .card .movie-card-footer .check-movie {
+    padding: 5px !important;
+}

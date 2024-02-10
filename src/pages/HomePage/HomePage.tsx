@@ -8,6 +8,7 @@ import { Paginate } from '../../models/paginate';
 import Slider from "react-slick";
 import CampaignCard from '../../components/CampaignCard/CampaignCard';
 import { Image } from 'react-bootstrap';
+import MoviePassCard from '../../components/MoviePassCard/MoviePassCard';
 export default function HomePage() {
 
     const [moviesInTheVision, setMoviesInTheVisions] = useState<Paginate<GetListMovieResponse>>();
@@ -29,6 +30,13 @@ export default function HomePage() {
         infinite: false,
         speed: 500,
         slidesToShow: 5,
+        slidesToScroll: 1,
+        lazyLoad: true
+    };
+    const settingsMoviePass = {
+        infinite: false,
+        speed: 500,
+        slidesToShow: 3,
         slidesToScroll: 1,
         lazyLoad: true
     };
@@ -116,6 +124,17 @@ export default function HomePage() {
                         <span className='text-link'>Detaylı Bilgi İçin Tıkla</span>
                     </div>
 
+                </div>
+
+                <div className='cgv-movie-pass-card-area container-fluid'>
+
+                    <Slider {...settingsMoviePass}>
+                        {
+                            moviesInTheVision?.items.map((movie) => (
+                                <MoviePassCard />
+                            ))
+                        }
+                    </Slider>
                 </div>
             </div>
         </div>
