@@ -1,13 +1,16 @@
 import './App.css'
-import MovieCard from './components/MovieCard/MovieCard';
 import Navi from './layouts/Navi/Navi'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import HomePage from './pages/HomePage/HomePage';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 function App() {
 
   return (
-    <>
-      <MovieCard />
-    </>
+    <div className='main'>
+      <Navi />
+      <HomePage />
+    </div>
   )
 }
 

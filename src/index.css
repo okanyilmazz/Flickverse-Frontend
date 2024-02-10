@@ -61,3 +61,22 @@ body {
 .dropdown-toggle::after {
   display: none !important;
 }
+
+.slick-disabled {
+  display: none !important;
+}
+
+.slick-prev:before,
+.slick-next::before {
+  font-size: 45px;
+  opacity: 1;
+}
+
+.slick-prev {
+  z-index: 2;
+}
+
+.slick-next {
+  position: absolute;
+  right: 0;
+}

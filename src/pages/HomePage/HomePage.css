@@ -1,0 +1,36 @@
+.home-page .home-page-content {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+}
+
+
+.home-page .home-page-content .movies .movie-card {
+    margin-right: 1rem;
+    justify-content: center;
+}
+
+.home-page .home-page-content .movies-in-vision-area-header,
+.home-page .home-page-content .upcoming-movies-area-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-page .home-page-content #header-title {
+    color: #fff;
+    font-family: 'ProximaNovaBold';
+    font-size: 48px;
+}
+
+.home-page .home-page-content #header-see-more {
+
+    color: #fff;
+    font-family: 'ProximaNovaBold';
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.home-page .home-page-content .upcoming-movies-area {
+    margin-top: 10rem;
+}

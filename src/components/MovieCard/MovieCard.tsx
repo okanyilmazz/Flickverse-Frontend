@@ -1,10 +1,11 @@
 import './MovieCard.css'
 import { Button, Card, Image } from 'react-bootstrap'
-export default function MovieCard() {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function MovieCard(props: any) {
     return (
         <div className='movie-card'>
             <Card >
-                <Card.Img variant="top" src="assets/images/movies/lohusa/lohusa-vizyon-422x584px.jpg" />
+                <Card.Img variant="top" src={props.imagePath} />
 
                 <Card.Body className='movie-card-hover'>
                     <div className='movie-card-hover-content'>
@@ -32,7 +33,7 @@ export default function MovieCard() {
                                     <Image src='assets/images/logos/star.svg' />
                                 </div>
                                 <div className='text-area'>
-                                    <span>8.2</span>
+                                    <span>{props.imdbRating}</span>
                                 </div>
                             </div>
                         </div>
@@ -48,11 +49,13 @@ export default function MovieCard() {
                 </Card.Body>
 
             </Card>
+
             <div className='movie-detail'>
-                <span id='movie-name'>Lohusa</span>
-                <span id='movie-time' >1 sa 58 dk</span>
+                <span id='movie-name'>{props.movieName}</span>
+                <span id='movie-time' >{props.movieTime}</span>
                 <span id='movie-category'>Komedi</span>
             </div>
+
         </div>
     )
 }
