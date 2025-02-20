@@ -23,11 +23,11 @@ class MovieService extends BaseService<
     }
 
     getMovieInTheVision(): Promise<AxiosResponse<Paginate<GetListMovieResponse>>> {
-        return axiosInstance.get<Paginate<GetListMovieResponse>>("Movies/GetMoviesInVision?PageSize=10");
+        return axiosInstance.get<Paginate<GetListMovieResponse>>("Movies/GetMoviesInVision?PageIndex=0&PageSize=10");
     }
 
     getUpComingMovies(): Promise<AxiosResponse<Paginate<GetListMovieResponse>>> {
-        return axiosInstance.get<Paginate<GetListMovieResponse>>("Movies/GetUpComingMovies?PageSize=10");
+        return axiosInstance.get<Paginate<GetListMovieResponse>>("Movies/GetUpComingMovies?PageIndex=0&PageSize=10");
     }
 
 }

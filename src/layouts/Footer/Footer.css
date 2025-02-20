@@ -1,0 +1,123 @@
+.footer-page {
+    margin-bottom: 12rem !important;
+}
+
+.footer-page .social-media-area {
+    background-color: #98a726 !important;
+    align-items: center;
+    height: 80px;
+    display: flex;
+}
+
+.footer-page .social-media-area .social-media-slogan {
+    width: 35%;
+}
+
+.footer-page .social-media-area .social-media-slogan span {
+    color: #fff;
+    font-family: 'ProximaNovaBold';
+    font-size: 24px;
+}
+
+.footer-page .social-media-area .social-media-icons {
+    display: flex;
+    gap: 7rem;
+}
+
+.footer-bottom {
+    display: flex;
+    gap: 10%;
+    margin-top: 4rem;
+
+}
+
+.footer-bottom .footer-item-area ul {
+    padding-left: 0;
+}
+
+.footer-bottom ul li {
+    margin: 0;
+    list-style: none;
+    color: #fff;
+    font-size: 16px;
+    opacity: 0.8;
+    font-family: "ProximaNovaRegular";
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer-bottom ul li:first-child {
+    margin-top: 3rem;
+}
+
+.footer-bottom .footer-item-area .title {
+    color: #fff;
+    font-family: "ProximaNovaBold";
+    font-size: 18px;
+    height: 30px;
+    align-items: start;
+}
+
+.footer-bottom .footer-item-area .title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer-bottom .footer-item-area .mobile-app button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.footer-bottom .advertisement-slogan {
+    font-size: 16px;
+    margin-top: 2.5rem;
+    line-height: 5px;
+    opacity: 0.4;
+}
+
+.footer-bottom .mobile-app {
+    color: #fff;
+    padding-left: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 10px;
+}
+
+.footer-bottom .mobile-app .title {
+    opacity: 1;
+    margin-top: 0;
+    align-items: start;
+}
+
+.footer-bottom .mobile-app p {
+    margin-top: -10px;
+
+}
+
+
+.footer-bottom .mobile-app p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.footer-bottom .mobile-app .advertisement-slogan p {
+    text-decoration: none;
+    cursor: text;
+}
+
+.footer-bottom .mobile-app button img {
+    width: 140px;
+}
+
+.mt-6 {
+    margin-top: 4rem;
+}

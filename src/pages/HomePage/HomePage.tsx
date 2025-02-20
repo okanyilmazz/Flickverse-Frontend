@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
+
 import './HomePage.css'
 import MovieCard from '../../components/MovieCard/MovieCard'
 import GetListMovieResponse from '../../models/responses/movie/getListMovieResponse'
@@ -7,7 +8,7 @@ import { Paginate } from '../../models/paginate';
 
 import Slider from "react-slick";
 import CampaignCard from '../../components/CampaignCard/CampaignCard';
-import { Button, Col, Image, Row } from 'react-bootstrap';
+import { Button, Image } from 'react-bootstrap';
 import MoviePassCard from '../../components/MoviePassCard/MoviePassCard';
 export default function HomePage() {
 
@@ -20,6 +21,7 @@ export default function HomePage() {
         })
 
         movieService.getUpComingMovies().then(result => {
+            console.log(result.data);
             setUpComingMovies(result.data);
         })
 
@@ -30,15 +32,13 @@ export default function HomePage() {
         infinite: false,
         speed: 500,
         slidesToShow: 5,
-        slidesToScroll: 1,
-        lazyLoad: true
+        slidesToScroll: 1
     };
     const settingsMoviePass = {
         infinite: false,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1,
-        lazyLoad: true
+        slidesToScroll: 1
     };
 
     const settingsCampaign = {
@@ -46,9 +46,7 @@ export default function HomePage() {
         infinite: false,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1,
-        lazyLoad: true
-
+        slidesToScroll: 1
     };
     return (
         <div className='home-page'>
@@ -82,6 +80,7 @@ export default function HomePage() {
                         <Slider {...settings}>
                             {
                                 upComingMovies?.items.map((movie) => (
+
                                     <MovieCard
                                         movieName={movie.name}
                                         imdbRating={movie.imdbRating}
