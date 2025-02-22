@@ -10,10 +10,13 @@ import Slider from "react-slick";
 import CampaignCard from '../../components/CampaignCard/CampaignCard';
 import { Button, Image } from 'react-bootstrap';
 import MoviePassCard from '../../components/MoviePassCard/MoviePassCard';
+import campaignService from '../../services/campaignService';
+import GetCampaignResponse from '../../models/responses/campaign/getCampaignResponse';
 export default function HomePage() {
 
     const [moviesInTheVision, setMoviesInTheVisions] = useState<Paginate<GetListMovieResponse>>();
     const [upComingMovies, setUpComingMovies] = useState<Paginate<GetListMovieResponse>>();
+    const [campaigns, setCampaigns] = useState<Paginate<GetCampaignResponse>>();
 
     useEffect(() => {
         movieService.getMovieInTheVision().then(result => {
@@ -21,8 +24,11 @@ export default function HomePage() {
         })
 
         movieService.getUpComingMovies().then(result => {
-            console.log(result.data);
             setUpComingMovies(result.data);
+        })
+
+        campaignService.getAll().then(result => {
+            setCampaigns(result.data);
         })
 
 
@@ -43,10 +49,12 @@ export default function HomePage() {
 
     const settingsCampaign = {
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000
     };
     return (
         <div className='home-page'>
@@ -100,8 +108,10 @@ export default function HomePage() {
                     <div className='campaigns'>
                         <Slider className='campaign-slider' {...settingsCampaign}>
                             {
-                                moviesInTheVision?.items.map((movie) => (
-                                    <CampaignCard />
+                                campaigns?.items.map((campaign) => (
+                                    <CampaignCard
+                                        title={campaign.title}
+                                        imagePath={campaign.imagePath} />
                                 ))
 
                             }

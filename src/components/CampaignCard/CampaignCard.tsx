@@ -1,11 +1,11 @@
-import React from 'react'
-import { Card } from 'react-bootstrap'
+
+import { Card, CardText } from 'react-bootstrap'
 import './CampaignCard.css'
-export default function CampaignCard() {
+export default function CampaignCard(props: any) {
     return (
         <div className='campaign-card'>
             <Card>
-                <Card.Img src='assets/images/campaigns/Kampanya_Gorsellerinin_Yenilenmesi_1920x420-05.jpg'></Card.Img>
+                <Card.Img src={props.imagePath}></Card.Img>
             </Card>
         </div>
     )
